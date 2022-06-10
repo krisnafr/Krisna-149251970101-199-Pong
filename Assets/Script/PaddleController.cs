@@ -38,5 +38,13 @@ public class PaddleController : MonoBehaviour
     private void MoveObject(Vector2 movement)
     {
         rig.velocity = movement;
+        if(upKey == KeyCode.W)
+        {
+            Debug.Log("Paddle kiri: " + movement);
+        }
+        if(upKey == KeyCode.O)
+        {
+            Debug.Log("Paddle kanan: " + movement);
+        }
     }
 }
