@@ -67,7 +67,7 @@ public class BallController : MonoBehaviour
         {
             rig.velocity = new Vector2(rig.velocity.x, maxSpeed);
         }
-        if(rig.velocity.y < maxSpeed)
+        if(rig.velocity.y < -maxSpeed)
         {
             rig.velocity = new Vector2(rig.velocity.x, -maxSpeed);
         }
