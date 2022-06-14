@@ -72,4 +72,8 @@ public class BallController : MonoBehaviour
             rig.velocity = new Vector2(rig.velocity.x, -maxSpeed);
         }
     }
+    public void PUSpeedUpActive(float magnitude)
+    {
+        rig.velocity *= magnitude;
+    }
 }
