@@ -20,7 +20,7 @@ public class BallController : MonoBehaviour
     void Update()
     {
         BallSpeed();
-        Debug.Log("velo "+rig.velocity);
+        // Debug.Log("velo "+rig.velocity);
     }
     public void ResetBall() 
     { 
@@ -72,7 +72,7 @@ public class BallController : MonoBehaviour
             rig.velocity = new Vector2(rig.velocity.x, -maxSpeed);
         }
     }
-    public void PUSpeedUpActive(float magnitude)
+    public void PUSpeedActive(float magnitude)
     {
         rig.velocity *= magnitude;
     }

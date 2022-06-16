@@ -21,11 +21,12 @@ public class PUSpeedController : MonoBehaviour
             manager.RemovePowerUp(gameObject);
         } 
     } 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision == ball) 
         { 
-            ball.GetComponent<BallController>().PUSpeedUpActive(magnitude);
+            ball.GetComponent<BallController>().PUSpeedActive(magnitude);
             manager.RemovePowerUp(gameObject);
         }  
     }
